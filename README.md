@@ -1,5 +1,5 @@
 # Ex.06 Book Front Cover Page Design
-## Date:
+## Date: 26/04/2025
 
 ## AIM:
 To design a book front cover page using HTML and CSS.
@@ -31,10 +31,99 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 ## PROGRAM:
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Cover</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .book-cover {
+      width: 400px;
+      height: 600px;
+      background: #0a0a0a;
+      border: 3px solid red;
+      padding: 40px 30px;
+      box-shadow: 0 0 30px red;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .title {
+      font-family: 'Cinzel', serif;
+      font-size: 32px;
+      color: red;
+      text-align: center;
+      letter-spacing: 1px;
+      text-shadow: 0 0 10px red;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      text-align: center;
+      color: #ccc;
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+    .image img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      margin: 30px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 15px red;
+    }
+
+    .author {
+      font-size: 15px;
+      text-align: center;
+      color: #ff4d4d;
+      font-weight: bold;
+    }
+
+    .line {
+      height: 2px;
+      background: red;
+      width: 80px;
+      margin: 12px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="book-cover">
+    <div>
+      <div class="title">INTO THE UPSIDE DOWN</div>
+      <div class="line"></div>
+      <div class="subtitle">A Stranger Tale of Shadows</div>
+    </div>
+    <div class="image">
+      <img src="https://i.pinimg.com/736x/eb/21/31/eb213187c5ebf158ffc7b21e865e5112.jpg">
+    </div>
+    <div class="author">By Deenathayalan K (212224040058)</div>
+  </div>
+</body>
+</html>
+```
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/4dd57375-3f24-465d-b32b-cbf006f927d5)
 
 ## RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
